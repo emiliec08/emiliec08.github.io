@@ -1,0 +1,174 @@
+/* Déclaration des polices utilisées dans la page Web */
+@font-face {
+   font-family: 'PTS75F';
+   src: url(../polices/PTS75F.ttf);
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'PTN57F';
+   src: url(../polices/PTN57F.ttf);
+   font-weight: normal;
+   font-style: normal;
+}
+
+/* fin déclaration */
+
+
+/* couleur du fond de la page web */
+body {
+   background-color: rgb(152, 146, 116)
+}
+
+/* Taille de la carte */
+#map {
+   width: 1200px;
+   height: 600px;
+}
+
+/* Le conteneur qui va être affiché par-dessus la carte */
+#title-block {
+   position: absolute;
+   /* Pour se positionner en overlay */
+   top: 15px;
+   /* Ajuste la marge haut */
+   left: 50px;
+   /* Ajuste la marge gauche */
+   z-index: 9999;
+   /* Pour être au-dessus de la carte et des légendes */
+   background-color: rgba(56, 55, 55, 0.413);
+   /* Fond légèrement transparent*/
+   border-radius: 8px;
+   /* Bords arrondis */
+   padding: 5px;
+   /* Espace interne autour du h1 */
+}
+
+/* couleur du titre du site web */
+h1 {
+   color: rgb(249, 246, 239);
+   text-align: center;
+   /* Pour centrer le titre */
+}
+
+/* Créer un style que j’intégrerai ensuite à mon titre (h1), à placer dans la div du HTML */
+.ma_classe {
+   font-size: 17pt;
+   font-family: 'PTS75F';
+   /* changer les police */
+}
+
+
+/* Gérer le style de la ligne de texte qui interroge les polygones des communes */
+#info {
+   font-size: 17pt;
+   color: white;
+   font-family: 'PTN57F';
+   /* changer les police */
+}
+
+/* Style pour les informations supplémentaires sur la carte (bloc sous la carte*/
+#description {
+   font-size: 13pt;
+   /* taille de la police */
+   color: #fff;
+   /* couleur du texte */
+   font-family: 'PTN57F';
+   /* ou toute autre police */
+   margin-top: 20px;
+   /* petit espace au-dessus du bloc */
+   margin-left: 10px;
+   /* marge à gauche */
+   width: 1150px;
+}
+
+/* ligne dans la legende */
+.legend-line {
+   display: inline-block;
+   width: 35px;
+   /* Longueur du trait */
+   height: 2px;
+   /* Épaisseur du trait */
+   /* À ce stade, j’ai un peu triché : n’arrivant pas à faire une ligne,
+   j’ai opté pour un rectangle très fin */
+   margin-right: 2px;
+   vertical-align: middle;
+}
+
+/* Boite légende densité  */
+.span {
+   display: inline-block;
+   width: 20px;
+   height: 10px;
+   margin-right: 5px;
+   border: 1px solid #999;
+}
+
+
+/* style commun à toutes les légendes */
+.legend {
+   /* Pour que ça s'affiche au-dessus de la carte */
+   position: absolute;
+   padding: 8px;
+   background-color: white;
+   border: 1px solid #ccc;
+   z-index: 9999;
+   /* S'assurer que ça reste visible par-dessus la carte */
+   font-size: 14px;
+   line-height: 1.4;
+   border-radius: 8px;
+   /*arrondir les blocs*/
+}
+
+.legend h3 {
+   margin: 0 0 5px 0;
+   font-size: 15px;
+   font-family: 'PTN57F';
+}
+
+.legend ul,
+.legend p {
+   margin: 0;
+   padding: 0;
+}
+
+.legend li {
+   list-style: none;
+   margin-bottom: 3px;
+}
+
+
+/* ICI je gère le placement de chaque bloc de légende */
+/* Bloc légende commune */
+#legend-communes {
+   top: 180px;
+   right: 15px;
+
+}
+/* Bloc légende eqpt */
+#legend-eqpt {
+   top: 200px;
+   /* Décalage vertical */
+   left: 20px;
+}
+
+/* Bloc légende pistes */
+#legend-pistes {
+   bottom: 40px;
+   /* Décalage vertical */
+   left: 20px;
+   width: 155px;
+}
+
+
+/* style des pop_up */
+.my_popup .leaflet-popup-content-wrapper {
+   background-color: rgb(97, 99, 99);
+   color: rgb(255, 255, 255);
+   border: 2px solid #ffffff;
+}
+
+.my_popup .leaflet-popup-tip {
+   background-color: rgb(97, 99, 99);
+}
