@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="base_cc_comparateur-COM">
+        <SrcDataSource relativeToVRT="1">base_cc_comparateur.xlsx</SrcDataSource>
+        <!--Header=False-->
+        <SrcSql dialect="sqlite">SELECT * FROM 'COM' LIMIT 34949 OFFSET 6</SrcSql>
+        <Field name="CODGEO" src="Field1" type="String"/>
+        <Field name="LIBGEO" src="Field2" type="String"/>
+        <Field name="REG" src="Field3" type="String"/>
+        <Field name="DEP" src="Field4" type="String"/>
+        <Field name="P21_POP" src="Field5" type="String"/>
+        <Field name="P15_POP" src="Field6" type="String"/>
+        <Field name="SUPERF" src="Field7" type="String"/>
+        <Field name="NAIS1520" src="Field8" type="String"/>
+        <Field name="DECE1520" src="Field9" type="String"/>
+        <Field name="P21_MEN" src="Field10" type="String"/>
+        <Field name="NAISD22" src="Field11" type="String"/>
+        <Field name="DECESD22" src="Field12" type="String"/>
+        <Field name="P21_LOG" src="Field13" type="String"/>
+        <Field name="P21_RP" src="Field14" type="String"/>
+        <Field name="P21_RSECOCC" src="Field15" type="String"/>
+        <Field name="P21_LOGVAC" src="Field16" type="String"/>
+        <Field name="P21_RP_PROP" src="Field17" type="String"/>
+        <Field name="NBMENFISC21" src="Field18" type="String"/>
+        <Field name="PIMP21" src="Field19" type="String"/>
+        <Field name="MED21" src="Field20" type="String"/>
+        <Field name="TP6021" src="Field21" type="String"/>
+        <Field name="P21_EMPLT" src="Field22" type="String"/>
+        <Field name="P21_EMPLT_SAL" src="Field23" type="String"/>
+        <Field name="P15_EMPLT" src="Field24" type="String"/>
+        <Field name="P21_POP1564" src="Field25" type="String"/>
+        <Field name="P21_CHOM1564" src="Field26" type="String"/>
+        <Field name="P21_ACT1564" src="Field27" type="String"/>
+        <Field name="ETTOT22" src="Field28" type="String"/>
+        <Field name="ETAZ22" src="Field29" type="String"/>
+        <Field name="ETBE22" src="Field30" type="String"/>
+        <Field name="ETFZ22" src="Field31" type="String"/>
+        <Field name="ETGU22" src="Field32" type="String"/>
+        <Field name="ETGZ22" src="Field33" type="String"/>
+        <Field name="ETOQ22" src="Field34" type="String"/>
+        <Field name="ETTEF122" src="Field35" type="String"/>
+        <Field name="ETTEFP1022" src="Field36" type="String"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>
